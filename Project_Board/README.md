@@ -1,16 +1,59 @@
-# React + Vite
+# Project Boards — Проекты для МСБ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Учебный фронтенд-проект, реализованный в рамках курса по IT-программированию.  
+Проект представляет собой портал с подборкой бизнес-проектов для малого и среднего бизнеса (МСБ), оформленных в виде карточек.
 
-Currently, two official plugins are available:
+## 🎯 Цель проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Закрепить навыки:
+- работы с массивами объектов;
+- динамического рендеринга данных в React;
+- использования компонентного подхода;
+- управления состоянием (`useState`);
+- базовой архитектуры React-приложения;
+- стилизации интерфейса с помощью Tailwind CSS.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Функциональность
 
-## Expanding the ESLint configuration
+- Отображение списка проектов на основе массива объектов
+- Каждая карточка проекта содержит:
+  - название;
+  - краткое описание;
+  - статус (active / archived);
+  - дату создания;
+  - изображение
+- Фильтрация проектов по статусу:
+  - все;
+  - активные;
+  - архивные
+- Добавление нового проекта через форму «Создание проекта»
+- Адаптивный интерфейс (мобильные и десктопные экраны)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Используемый стек технологий
+
+- **React** (функциональные компоненты, hooks)
+- **Vite** (сборка и dev-сервер)
+- **Tailwind CSS** (стилизация интерфейса)
+- **JavaScript (ES6+)**
+- **HTML5**
+
+---
+
+## 📁 Структура проекта
+
+src/
+├── components/
+│ ├── Header/
+│ ├── ProjectCreator/
+│ ├── BoardsList/
+│ ├── BoardCard/
+│ └── Feedback/
+├── data/
+│ └── boards.js
+├── App.jsx
+├── main.jsx
+└── index.css
